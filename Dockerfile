@@ -5,15 +5,15 @@ MAINTAINER Joshua Marquez "joshua.marquezn@gmail.com"
 # api-console version to use.
 ENV API_CONSOLE_VERSION 3.0.16
 
-# Install some tools.
-RUN apk add --update wget unzip && rm -rf /var/cache/apk/*
+# Install some tools and remove apk cache.
+RUN apk --no-cache add openssl
 
 # Download api-console.
-RUN wget --no-check-certificate https://github.com/mulesoft/api-console/archive/v$API_CONSOLE_VERSION.zip -O console.zip
+RUN wget https://github.com/mulesoft/api-console/archive/v$API_CONSOLE_VERSION.tar.gz -O console.tar.gz
 
 # Install api-console.
-RUN unzip console.zip -d . \
- && rm -rf console.zip \
+RUN tar -xvf console.tar.gz \
+ && rm -rf console.tar.gz \
  && mv -f api-console-$API_CONSOLE_VERSION/dist /api-console-server \
  && rm -rf api-console-$API_CONSOLE_VERSION \
  && mkdir api-console-server/raml \

@@ -1,8 +1,6 @@
 # docker-api-console-server
 
-Docker [api-console](https://github.com/mulesoft/api-console) NGINX based server to render your RAML docs
-
-For development you can use [docker-api-console](https://github.com/joshuamarquez/docker-api-console).
+Docker [api-console](https://github.com/mulesoft/api-console) NGINX based server to render your RAML docs.
 
 ## Install
 
@@ -29,3 +27,4 @@ $ docker run --name api_console_server -v $(pwd):/api-console/raml -d -p 8080:80
 **Notes**
 
 *   For the command above to work, a RAML file named `api.raml` should exists in the directory were command was ran and the same for any types, traits, securitySchemes, resourceTypes, etc.
+*   For development you can use [docker-api-console](https://github.com/joshuamarquez/docker-api-console).

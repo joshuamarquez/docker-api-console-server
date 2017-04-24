@@ -13,7 +13,7 @@ $ docker pull joshuamarquez/api-console-server
 ```bash
 $ docker run --name api_console_server -d -p 8080:80 joshuamarquez/api-console-server
 ```
-then go to `http://localhost:8080` and you will see the example RAML API.
+then go to [localhost:8080](http://localhost:8080) and you will see the example RAML API.
 
 ## Use own RAML files
 

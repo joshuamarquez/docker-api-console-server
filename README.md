@@ -29,3 +29,8 @@ $ docker run --name api_console_server -v $(pwd):/api-console/raml -d -p 8080:80
 
 *   For the command above to work, a RAML file named `api.raml` should exists in the directory were command was ran and the same for any types, traits, securitySchemes, resourceTypes, etc.
 *   For development you can use [docker-api-console](https://github.com/joshuamarquez/docker-api-console).
+
+## Logging
+
+*   Access Log is located at `/api_console_server_access.log`
+*   Error Log is located at `/api_console_server_error.log`.

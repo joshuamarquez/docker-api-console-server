@@ -6,7 +6,7 @@ Docker [api-console](https://github.com/mulesoft/api-console) NGINX based server
 ## Install
 
 ```bash
-$ docker pull joshuamarquez/api-console-server
+$ docker pull joshuamarquez/api-console-server:0.1.0
 ```
 
 ## Quick example

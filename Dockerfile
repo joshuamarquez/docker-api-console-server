@@ -3,7 +3,7 @@ FROM nginx:alpine
 MAINTAINER Joshua Marquez "joshua.marquezn@gmail.com"
 
 # api-console version to use.
-ENV API_CONSOLE_VERSION 3.0.16
+ENV API_CONSOLE_VERSION 3.0.19
 
 # Install some tools and remove apk cache.
 RUN apk --no-cache add openssl

@@ -1,18 +1,18 @@
 # docker-api-console-server
-[![](https://images.microbadger.com/badges/version/joshuamarquez/api-console-server:0.1.1.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.1 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/joshuamarquez/api-console-server:0.1.1.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.1 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/joshuamarquez/api-console-server:0.1.2.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.2 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/joshuamarquez/api-console-server:0.1.2.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.2 "Get your own image badge on microbadger.com")
 
 Docker [api-console](https://github.com/mulesoft/api-console) NGINX based server to render your RAML docs.
 
 ## Install
 
 ```bash
-$ docker pull joshuamarquez/api-console-server:0.1.1
+$ docker pull joshuamarquez/api-console-server
 ```
 
 ## Quick example
 
 ```bash
-$ docker run --name api_console_server -d -p 8080:80 joshuamarquez/api-console-server
+$ docker run -p 8080:80 -d joshuamarquez/api-console-server
 ```
 then go to [localhost:8080](http://localhost:8080) and you will see the example RAML API.
 
@@ -22,7 +22,7 @@ This image will load RAML file `api.raml` located inside container at `/api-cons
 replace it and even add your own RAML files structure just mount a `VOLUME` like below.
 
 ```bash
-$ docker run --name api_console_server -v $(pwd):/api-console/raml -d -p 8080:80 joshuamarquez/api-console-server
+$ docker run -v $(pwd):/api-console/raml -p 8080:80 -d joshuamarquez/api-console-server
 ```
 
 **Notes**

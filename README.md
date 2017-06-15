@@ -1,5 +1,5 @@
 # docker-api-console-server
-[![](https://images.microbadger.com/badges/version/joshuamarquez/api-console-server:0.1.2.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.2 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/joshuamarquez/api-console-server:0.1.2.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.2 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/joshuamarquez/api-console-server:0.1.3.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.3 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/joshuamarquez/api-console-server:0.1.3.svg)](https://microbadger.com/images/joshuamarquez/api-console-server:0.1.3 "Get your own image badge on microbadger.com")
 
 Docker [api-console](https://github.com/mulesoft/api-console) NGINX based server to render your RAML docs.
 

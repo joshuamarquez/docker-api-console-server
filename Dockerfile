@@ -25,6 +25,8 @@ WORKDIR /api-console-server
 
 # Insert api RAML sample into index.html.
 RUN sed -i 's/<raml-initializer><\/raml-initializer>/<raml-console-loader src="raml\/api.raml"><\/raml-console-loader>/g' /api-console-server/index.html
+RUN sed -i 's/src="/src="\//g' /api-console-server/index.html
+RUN sed -i 's/href="/href="\//g' /api-console-server/index.html
 
 # Setup API Console Server using NGINX.
 COPY nginx.conf /etc/nginx/conf.d/api_console_server.conf
